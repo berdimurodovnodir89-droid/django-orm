@@ -14,6 +14,7 @@ class Restaurant(models.Model):
         Place,
         on_delete=models.CASCADE,
         primary_key=True,
+        related_name='restaurant'
     )
     serves_hot_dogs = models.BooleanField(default=False)
     serves_pizza = models.BooleanField(default=False)
